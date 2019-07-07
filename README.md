@@ -13,7 +13,7 @@
 ### Create virtual environment for Python:
 
 ```bash
-./install_venv.sh
+./install.sh
 ```
 
 ### Activate virtual environment:
