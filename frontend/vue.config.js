@@ -1,7 +1,7 @@
 const BundleTracker = require("webpack-bundle-tracker");
 
 module.exports = {
-    baseUrl: "http://0.0.0.0:8080/",
+    baseUrl: "http://localhost:8080/",
     outputDir: "./dist/",
 
     chainWebpack: config => {
