@@ -6,9 +6,9 @@
 - Virtualenv
 - Node.js
 - Yarn
-- tmux
+- tmux (linux only)
 
-## Installation
+## Installation on Linux:
 
 ### Create virtual environment for Python:
 
@@ -28,4 +28,45 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+## Installation on Windows:
 
+### Pick up Python libs:
+
+```cmd
+pip3 install --user -r requirements.txt
+```
+
+### Pick up Node libs:
+
+```cmd
+cd frontend
+yarn install
+```
+
+## Serve:
+
+### Linux:
+
+```bash
+./serve.sh
+```
+
+### Windows:
+
+Start webpack-dev-server:
+
+```cmd
+cd frontend
+yarn serve
+```
+
+Start Django server:
+
+```cmd
+python3 manage.py runserver
+```
+
+## TODO:
+
+- Make deployable
+- Make install & launch scripts for Windows
